@@ -5,9 +5,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 export default function Index() {
   return (
     <SafeAreaView className="flex-1 p-5 bg-background">
-      <Text className="text-xl font-bold text-green-500">
-        Welcome to Nativewind!
-      </Text>
+      <Text className="text-5xl font-sans-extrabold text-green-500">Home</Text>
       <Link
         href="/onboarding"
         asChild
@@ -29,16 +27,6 @@ export default function Index() {
         className="mt-4 text-background bg-primary p-4 rounded-md"
       >
         <Text>Go to sign up</Text>
-      </Link>
-
-      <Link href={"/subscriptions/spotify"}>Spotify Subscription</Link>
-      <Link
-        href={{
-          pathname: "/subscriptions/[id]",
-          params: { id: "claude" },
-        }}
-      >
-        Claude Max Subscription
       </Link>
     </SafeAreaView>
   );
